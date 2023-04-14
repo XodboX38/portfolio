@@ -13,112 +13,129 @@
         <div class="container py-5 h-100">
           <div class="row justify-content-center align-items-center h-100">
             <div class="col-12 col-lg-9 col-xl-7">
-              <div class="card shadow card-registration" style="border-radius: 15px;">
+              <div class="card shadow  shadow card-registration" style="border-radius: 15px;">
                 <div class="card-body p-4 p-md-5">
                   <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Profile Builder</h3>
                   <form method="POST" action="/create_portfolio">
       
-                    <div class="row">
-                      <div class="col-md-6 mb-4">
-      
-                        <div class="form-outline">
-                            <label class="form-label" for="firstName">First Name</label>
-                          <input type="text" id="firstName" class="form-control form-control-lg" name="first_name"/>
+                    <div class=" p-5 mb-4 d-flex justify-content-center flex-row align-items-center">
+                      <!--Avatar-->
+                        <div>
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="https://img.freepik.com/premium-vector/yummy-smile-emoji-with-tongue-lick-mouth-delicious-tasty-food-symbol-social-network-yummy-hungry-line-icon-savory-gourmet-enjoy-food-sign-vector-illustration-isolated-white-background_192280-1264.jpg?w=900"
+                            class="rounded-circle" alt="example placeholder" style="width: 200px;" />
                         </div>
-      
-                      </div>
-                      <div class="col-md-6 mb-4">
-      
-                        <div class="form-outline">
-                            <label class="form-label" for="lastName">Last Name</label>
-                          <input type="text" id="lastName" class="form-control form-control-lg" name="last_name"/>
+                        <div class="d-flex justify-content-center">
+                            <div class="btn btn-primary btn-rounded">
+                                <label class="form-label text-white m-1" for="customFile2">Upload Your Avatar</label>
+                                <input type="file" class="form-control d-none" id="customFile2" />
+                            </div>
                         </div>
-      
-                      </div>
-
-                      
+                        </div>
                     </div>
-      
-                    <div class="row">
-                      <div class="col-md-6 mb-4 d-flex align-items-center">
-      
-                        <div class="form-outline datepicker w-100">
-                            <label for="birthdayDate" class="form-label">Birthday</label>
-                          <input type="date" class="form-control form-control-lg" id="birthdayDate" name="birthdate"/>
+
+                    <div class=" shadow  p-4 mb-4">
+                      <div class="row">
+                        <div class="col-md-6 mb-4">
+  
+                          <div class="form-outline">
+                              <label class="form-label" for="firstName">First Name</label>
+                            <input type="text" id="firstName" class="form-control form-control-lg" name="first_name"/>
+                          </div>
+        
                         </div>
-      
+                        <div class="col-md-6 mb-4">
+        
+                          <div class="form-outline">
+                              <label class="form-label" for="lastName">Last Name</label>
+                            <input type="text" id="lastName" class="form-control form-control-lg" name="last_name"/>
+                          </div>
+        
+                        </div>
                       </div>
-                      <div class="col-md-6 mb-4">
-      
-                        <h6 class="mb-2 pb-1">Gender: </h6>
-      
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
-                            value="female" checked />
-                          <label class="form-check-label" for="femaleGender">Female</label>
+        
+                      <div class="row">
+                        <div class="col-md-6 mb-4 d-flex align-items-center">
+        
+                          <div class="form-outline datepicker w-100">
+                              <label for="birthdayDate" class="form-label">Birthday</label>
+                            <input type="date" class="form-control form-control-lg" id="birthdayDate" name="birthdate"/>
+                          </div>
+        
                         </div>
-      
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
-                            value="male" />
-                          <label class="form-check-label" for="maleGender">Male</label>
+                        <div class="col-md-6 mb-4">
+        
+                          <h6 class="mb-2 pb-1">Gender: </h6>
+        
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                              value="female" checked />
+                            <label class="form-check-label" for="femaleGender">Female</label>
+                          </div>
+        
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                              value="male" />
+                            <label class="form-check-label" for="maleGender">Male</label>
+                          </div>
+        
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                              value="other" />
+                            <label class="form-check-label" for="otherGender">Other</label>
+                          </div>
+        
                         </div>
-      
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
-                            value="other" />
-                          <label class="form-check-label" for="otherGender">Other</label>
-                        </div>
-      
                       </div>
+        
+                      <div class="row">
+                        <div class="col-md-6 mb-4 pb-2">
+        
+                          <div class="form-outline">
+                              <label class="form-label" for="emailAddress">Email</label>
+                            <input type="email" id="emailAddress" class="form-control form-control-lg" name="email"/>
+                          </div>
+        
+                        </div>
+                        <div class="col-md-6 mb-4 pb-2">
+        
+                          <div class="form-outline">
+                              <label class="form-label" for="phoneNumber">Phone Number</label>
+                            <input type="tel" id="phoneNumber" class="form-control form-control-lg" name="phone_number" />
+                          </div>
+        
+                        </div>
+  
+                        <div class="col-md-6 mb-4">
+        
+                          <div class="form-outline">
+                              <label class="form-label" for="lastName">Blood Group</label>
+                            <input type="text" id="lastName" class="form-control form-control-lg" name="blood_group"/>
+                          </div>
+        
+                        </div>
+  
+  
+                        <div class="col-md-6 mb-4">
+        
+                          <div class="form-outline">
+                              <label class="form-label" for="lastName">Current Status</label>
+                            <input type="text" id="lastName" class="form-control form-control-lg" name="current_status"/>
+                          </div>
+        
+                        </div>
                     </div>
-      
-                    <div class="row">
-                      <div class="col-md-6 mb-4 pb-2">
-      
-                        <div class="form-outline">
-                            <label class="form-label" for="emailAddress">Email</label>
-                          <input type="email" id="emailAddress" class="form-control form-control-lg" name="email"/>
-                        </div>
-      
-                      </div>
-                      <div class="col-md-6 mb-4 pb-2">
-      
-                        <div class="form-outline">
-                            <label class="form-label" for="phoneNumber">Phone Number</label>
-                          <input type="tel" id="phoneNumber" class="form-control form-control-lg" name="phone_number" />
-                        </div>
-      
-                      </div>
-
-                      <div class="col-md-6 mb-4">
-      
-                        <div class="form-outline">
-                            <label class="form-label" for="lastName">Blood Group</label>
-                          <input type="text" id="lastName" class="form-control form-control-lg" name="blood_group"/>
-                        </div>
-      
-                      </div>
-
-
-                      <div class="col-md-6 mb-4">
-      
-                        <div class="form-outline">
-                            <label class="form-label" for="lastName">Current Status</label>
-                          <input type="text" id="lastName" class="form-control form-control-lg" name="current_status"/>
-                        </div>
-      
-                      </div>
+                    </div>
 
 <!--Permanent Address-->
                       <label class="form-label" for="lastName">Permanent Address</label>
-                      <div class="card p-4">
+                      <div class=" shadow  p-4">
 
-                        <div class="col-md-6 mb-4">
-      
+                        <div class="row">
+                          <div class="col-md-6 mb-4">
                             <div class="form-outline">
                                 <label class="form-label" for="lastName">Country</label>
-                                <select id="country" name="permanent_country" onchange="get_state_list();" class="form-control">
+                                <select id="permanent_country" name="permanent_country" onchange="get_state_list();" class="form-control">
                                     <option value="Afghanistan">Afghanistan</option>
                                     <option value="Åland Islands">Åland Islands</option>
                                     <option value="Albania">Albania</option>
@@ -366,58 +383,64 @@
                                 </select>
                             </div>
           
+                          </div>
+
+                          <div class="col-md-6 mb-4">
+        
+                              <div class="form-outline">
+                                  <label class="form-label" for="lastName">State</label>
+                                  <select id="permanent_state" name="permanent_state"  class="form-control">
+                                  
+                                  </select>   
+                              </div>
+            
+                          </div>
                         </div>
 
-                        <div class="col-md-6 mb-4">
-      
-                            <div class="form-outline">
-                                <label class="form-label" for="lastName">State</label>
-                                <select id="state" name="permanent_state" onchange="get_state_list();" class="form-control">
-                                
-                                </select>   
-                            </div>
-          
-                        </div>
-
-                        <div class="col-md-6 mb-4">
+                        <div class="row">
+                          <div class="col-md-6 mb-4">
       
                             <div class="form-outline">
                                 <label class="form-label" for="lastName">City</label>
-                              <input type="text" id="permanent_district" class="form-control form-control-lg" name="permanent_city"/>
+                              <input type="text" id="permanent_city" class="form-control form-control-lg" name="permanent_city"/>
                             </div>
           
+                          </div>
+
+                          <div class="col-md-6 mb-4">
+        
+                              <div class="form-outline">
+                                  <label class="form-label" for="lastName">District</label>
+                                <input type="text" id="permanent_district" class="form-control form-control-lg" name="permanent_district"/>
+                              </div>
+            
+                          </div>
                         </div>
 
-                        <div class="col-md-6 mb-4">
-      
-                            <div class="form-outline">
-                                <label class="form-label" for="lastName">District</label>
-                              <input type="text" id="permanent_district" class="form-control form-control-lg" name="permanent_district"/>
-                            </div>
-          
-                        </div>
-
-                        <div class="col-md-6 mb-4">
+                        <div class="row">
+                          <div class="col-md-6 mb-4">
       
                             <div class="form-outline">
                                 <label class="form-label" for="lastName">Locality</label>
-                              <input type="text" id="permanent__locality" class="form-control form-control-lg" name="permanent_locality"/>
+                              <input type="text" id="permanent_locality" class="form-control form-control-lg" name="permanent_locality"/>
                             </div>
           
+                          </div>
                         </div>
 
                         
                       </div>
 
 <!--Current Address-->
-<label class="form-label mt-4" for="lastName">Current Address</label>
-                      <div class="card p-4">
+            <label class="form-label mt-4" for="lastName">Current Address</label>
+                      <div class=" shadow  p-4">
 
-                        <div class="col-md-6 mb-4">
+                        <div class="row">
+                          <div class="col-md-6 mb-4">
       
                             <div class="form-outline">
                                 <label class="form-label" for="lastName">Country</label>
-                                <select id="current_country" name="current_country" onchange="get_state_list();" class="form-control">
+                                <select id="current_country" name="current_country"  onchange="get_state_list();" class="form-control">
                                     <option value="Afghanistan">Afghanistan</option>
                                     <option value="Åland Islands">Åland Islands</option>
                                     <option value="Albania">Albania</option>
@@ -664,53 +687,61 @@
                                     <option value="Zimbabwe">Zimbabwe</option>
                                 </select>
                             </div>
-          
-                        </div>
+                          </div>
 
                         <div class="col-md-6 mb-4">
       
                             <div class="form-outline">
                                 <label class="form-label" for="lastName">State</label>
-                                <select id="current_state" name="current_state" onchange="get_state_list();" class="form-control">
+                                <select id="current_state" name="current_state"  class="form-control">
                                 
                                 </select>   
                             </div>
           
+                           </div>
                         </div>
 
-                        <div class="col-md-6 mb-4">
+                        <div class="row">
+                          <div class="col-md-6 mb-4">
       
                             <div class="form-outline">
                                 <label class="form-label" for="lastName">City</label>
                               <input type="text" id="current_city" class="form-control form-control-lg" name="current_city"/>
                             </div>
           
+                          </div>
+
+                          <div class="col-md-6 mb-4">
+        
+                              <div class="form-outline">
+                                  <label class="form-label" for="lastName">District</label>
+                                <input type="text" id="current_district" class="form-control form-control-lg" name="current_district"/>
+                              </div>
+            
+                          </div>
                         </div>
 
-                        <div class="col-md-6 mb-4">
-      
-                            <div class="form-outline">
-                                <label class="form-label" for="lastName">District</label>
-                              <input type="text" id="current_district" class="form-control form-control-lg" name="current_district"/>
-                            </div>
-          
-                        </div>
 
-                        <div class="col-md-6 mb-4">
-      
-                            <div class="form-outline">
-                                <label class="form-label" for="lastName">Locality</label>
-                              <input type="text" id="current_locality" class="form-control form-control-lg" name="current_locality"/>
-                            </div>
-          
+                        <div class="row">
+                          <div class="col-md-6 mb-4">
+        
+                              <div class="form-outline">
+                                  <label class="form-label" for="lastName">Locality</label>
+                                <input type="text" id="current_locality" class="form-control form-control-lg" name="current_locality"/>
+                              </div>
+            
+                          </div>
                         </div>
-
-                        
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" role="button" onclick="fill_current_address();">
+                          <label class="form-check-label" for="flexSwitchCheckChecked" role="button" onclick="fill_current_address();">Same as Permanent Address</label>
+                        </div>
                       </div>
+<!--Current Address-->
 
-                    </div>
-                    <div class="mt-4 pt-2">
-                      <input class="btn btn-primary btn-lg" type="submit" value="Next"/>
+                          <div class="mt-4 pt-2">
+                            <input class="btn btn-primary btn-lg" type="submit" value="Choose Template"/>
+                          </div>
                     </div>
       
                   </form>
@@ -721,5 +752,6 @@
         </div>
       </section>
 </body>
+<script src="assest/js/variables.js"></script>
 <script src="assest/js/script.js"></script>
 </html>

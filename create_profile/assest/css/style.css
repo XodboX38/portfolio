@@ -10,3 +10,11 @@ padding-right: .75em;
 .card-registration .select-arrow {
 top: 13px;
 }
+
+
+.no_outline:focus{
+    outline:none;
+    outline-width: 0;
+    user-select: none;
+}
+
