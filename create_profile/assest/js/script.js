@@ -1,22 +1,30 @@
+    const same_address_button = document.getElementById("same_address");
+    const permanent_country = document.getElementById("permanent_country");
+    const permanent_state = document.getElementById("permanent_state");
+    
+    
+    
     function get_state_list(){
-        $country_value = country.value;
+        let country_value = permanent_country.value;
         var request =  new XMLHttpRequest();
-        request.open("GET",`/get_states?country=${permanent_country.value}`);
-        request.setRequestHeader("content-type","application/json");
+        request.open("GET",`https://topdogfound.000webhostapp.com/getStatesData?country=${permanent_country.value}`);
         request.send();
 
         request.addEventListener("load",()=>{
             if(request.status === 200){
-                set_options(JSON.parse(request.responseText()));
+                set_options(JSON.parse(request.responseText));
             }
             else{
-                alert_error("Something Went Wrong");
+                alert("Something Went Wrong");
             }
         })
     }
 
 
-    function set_options(){
+    function set_options(array){
+        
+        permanent_state.innerHTML = "";
+
         array.forEach(element => {
             let option = document.createElement("option");
             option.value = element["name"];
@@ -25,36 +33,33 @@
         });
     }
 
+    same_address_button.onchange = ()=>
+    {
+        if(same_address_button.checked == true)
+        {
+            fill_current_address("0.6",true);
 
-    function fill_current_address(){
-        
-        // current_country.value = permanent_country.value;
-        // current_city.value = permanent_city.value;
-        // current_district.value = permanent_district.value;
-        // current_state.value = permanent_state.value;
-        // current_locality.value = permanent_locality.value;
+        }
+        else
+        {
+            fill_current_address("1",false);
+        }
+    }
 
-        // current_country.readOnly = true;
-        // current_city.readOnly = true;
-        // current_district.readOnly = true;
-        // current_state.readOnly = true;
-        // current_locality.readOnly = true;
+        /*
+            @param string opacity
+            @param boolean readonly
 
-        // current_city.style.opacity = ".6";
-        // current_country.style.opacity = ".6";
-        // current_city.style.opacity = ".6";
-        // current_district.style.opacity = ".6";
-        // current_state.style.opacity = ".6";
-        // current_locality.style.opacity = ".6";
-
-
-
-
+        */
+    function fill_current_address(opacity,readonly_property){
         let address_data = ["country", "city", "district", "state", "locality"];
 
         for(var i=0; i<address_data.length; i++)
         {
-            current_+address_data[i]+"."+value = permanent_+address_data[i]+"."+value;
-            console.log(permanent_+address_data[i]+'.'+value);
+            var permanent = document.getElementById(`permanent_${address_data[i]}`);
+            var current = document.getElementById(`current_${address_data[i]}`);
+            current.style.opacity = opacity;
+            current.readOnly = readonly_property;
+            current.value = permanent.value;
         }
     };
