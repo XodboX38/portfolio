@@ -25,7 +25,7 @@
 
                   <form method="POST" action="http://topdogfound.000webhostapp.com/createPortfolio" >
       
-                    <div class=" p-5 mb-4 d-flex justify-content-center flex-row align-items-center">
+                    <div class="rounded p-5 mb-4 d-flex justify-content-center flex-row align-items-center">
                       <!--Avatar-->
                         <div>
                         <div class="d-flex justify-content-center mb-4">
@@ -41,7 +41,7 @@
                         </div>
                     </div>
 
-                    <div class=" shadow  p-4 mb-4">
+                    <div class=" shadow rounded p-4 mb-4">
                       <div class="row">
                         <div class="col-md-6 mb-4">
   
@@ -136,7 +136,7 @@
 
 <!--Permanent Address-->
                       <label class="form-label" for="lastName">Permanent Address</label>
-                      <div class=" shadow  p-4">
+                      <div class=" shadow rounded p-4">
 
                         <div class="row">
                           <div class="col-md-6 mb-4">
@@ -440,7 +440,7 @@
 
 <!--Current Address-->
                       <label class="form-label mt-4" for="lastName">Current Address</label>
-                      <div class=" shadow  p-4">
+                      <div class=" shadow rounded p-4">
 
                         <div class="row">
                           <div class="col-md-6 mb-4">
@@ -748,7 +748,7 @@
 
 <!--Adding skills-->
                       <label class="form-label mt-4" for="lastName">Skills</label>
-                      <div class="shadow p-4">
+                      <div class="shadow rounded p-4">
                           <div class="form-outline">
                             <input type="text" id="add_skills" class="form-control form-control-lg mb-4" name="add_skilss" autocomplete="off" placeholder="Add skill"/>
                             <div class="btn btn-primary mb-4" id="add_skill_button">Add Skills</div>
@@ -766,52 +766,23 @@
 <!--Add Work Experience-->
                       <label class="form-label mt-4" for="lastName">Work Experience</label>
 
-                      <div class=" shadow p-4 m-2 " style="width: 100%; height: 30.1rem; overflow-y:scroll;"  id="work_exp_block">
+                      <div class=" d-none shadow rounded p-4 m-2 " style="width: 100%; height: 30.1rem; overflow-y:scroll;"  id="work_exp_block">
                         
-                            <div class=" shadow p-4 mb-3" style="background-color: rgba(47, 218, 24, 0.088)">
+                            <!-- <div class=" shadow p-4 mb-3" style="background-color: rgba(24, 82, 218, 0.149)">
                               <h2 class="mt-2">Work Heading</h2>
                               <p>Work Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus porro itaque consequuntur ratione, magnam molestias culpa voluptatem non, eveniet rem eum totam vel ipsam delectus tempora repellat sint minima?</p>
-                            </div>
+                              <div class="btn btn-outline-danger">Remove <i class="bi bi-trash"></i></div>
+                            </div> -->
 
-                            <div class=" shadow p-4 mb-3" style="background-color: rgba(192, 24, 218, 0.088)">
-                              <h2 class="mt-2">Work Heading</h2>
-                              <p>Work Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus porro itaque consequuntur ratione, magnam molestias culpa voluptatem non, eveniet rem eum totam vel ipsam delectus tempora repellat sint minima?</p>
-                            </div>
-
-                            <div class=" shadow p-4 mb-3" style="background-color: rgba(53, 24, 218, 0.088)">
-                              <h2 class="mt-2">Work Heading</h2>
-                              <p>Work Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus porro itaque consequuntur ratione, magnam molestias culpa voluptatem non, eveniet rem eum totam vel ipsam delectus tempora repellat sint minima?</p>
-                            </div>
-
-                            <div class=" shadow p-4 mb-3" style="background-color: rgba(218, 163, 24, 0.088)">
-                              <h2 class="mt-2">Work Heading</h2>
-                              <p>Work Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus porro itaque consequuntur ratione, magnam molestias culpa voluptatem non, eveniet rem eum totam vel ipsam delectus tempora repellat sint minima?</p>
-                            </div>
-
-                            <div class=" shadow p-4 mb-3" style="background-color: rgba(218, 163, 24, 0.088)">
-                              <h2 class="mt-2">Work Heading</h2>
-                              <p>Work Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus porro itaque consequuntur ratione, magnam molestias culpa voluptatem non, eveniet rem eum totam vel ipsam delectus tempora repellat sint minima?</p>
-                            </div>
-
-                            <div class=" shadow p-4 mb-3" style="background-color: rgba(24, 189, 218, 0.088)">
-                              <h2 class="mt-2">Work Heading</h2>
-                              <p>Work Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus porro itaque consequuntur ratione, magnam molestias culpa voluptatem non, eveniet rem eum totam vel ipsam delectus tempora repellat sint minima?</p>
-                            </div>
-
-                            
-                            <div class=" shadow p-4 mb-3" style="background-color: rgba(218, 24, 24, 0.088)">
-                              <h2 class="mt-2">Work Heading</h2>
-                              <p>Work Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus porro itaque consequuntur ratione, magnam molestias culpa voluptatem non, eveniet rem eum totam vel ipsam delectus tempora repellat sint minima?</p>
-                            </div>
                       </div>
 
-                      
-                      <!-- <div class=" shadow p-4" id="work_exp">
-                        <input type="text" class="form-control form-control-lg mb-4" autocomplete="off" placeholder="Add work Title"/>
-                        <textarea id="w3review"  class="form-control form-control-lg mb-4"  rows="4" cols="50" placeholder="Add work description"></textarea>
+                      <div class=" shadow rounded p-4 m-2" id="work_exp">
+                        <input type="text" id="work_exp_title" class="form-control form-control-lg mb-4" autocomplete="off" placeholder="Add work Title"/>
+                        <textarea id="work_exp_description"  class="form-control form-control-lg mb-4"  rows="4" cols="50" placeholder="Add work description"></textarea>
                         <div class="btn btn-primary m-1" id="add_exp">Add Experience</div>
-                      </div> -->
-                      <!-- <div class="btn btn-primary m-4" id="add_work_exp">Work Experience</div> -->
+                        <!-- <div class="btn btn-primary m-4" id="add_work_exp">Work Experience</div> -->
+                      </div>
+
 <!--Add Work Experience-->
                       <div class="mt-4 pt-2">
                         <input class="btn btn-primary btn-lg" type="submit" value="Choose Template"/>

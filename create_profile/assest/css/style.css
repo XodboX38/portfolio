@@ -21,3 +21,7 @@ top: 13px;
 .shadow::-webkit-scrollbar{
     display: none;
   }
+
+  #working_div:hover{
+    cursor: pointer;
+  }
