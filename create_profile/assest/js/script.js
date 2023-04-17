@@ -108,6 +108,7 @@
         skills_list.appendChild(skill_div);
 
         add_skill_input_field.value = "";
+        add_skill_input_field.focus();
 
     }
 
@@ -119,6 +120,6 @@
         var work_title = document.createElement("input");
         work_title.type = "text";
 
-        
+
     }
 
