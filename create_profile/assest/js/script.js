@@ -4,6 +4,8 @@
     const add_skill_input_field = document.getElementById("add_skills");
     const add_skill_button = document.getElementById("add_skill_button");
     const skills_list = document.getElementById("skills_list");
+    const work_exp_block = document.getElementById("work_exp");
+    const add_work_exp_btutton = document.getElementById("add_work_exp");
 
 
     add_skill_button.onclick = () =>{
@@ -108,3 +110,15 @@
         add_skill_input_field.value = "";
 
     }
+
+
+    add_work_exp_btutton.onclick = ()=>{
+
+        add_work_exp_btutton.style.display = "none";
+
+        var work_title = document.createElement("input");
+        work_title.type = "text";
+
+        
+    }
+

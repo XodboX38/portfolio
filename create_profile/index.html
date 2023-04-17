@@ -17,8 +17,13 @@
               <div class="card shadow  shadow card-registration" style="border-radius: 15px;">
                 <div class="card-body p-4 p-md-5">
                   <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Profile Builder</h3>
+                  
+                  <blockquote class="blockquote text-center opacity-25">
+                    <small>sono sharingan omaewa doko made mieteiru</small><br>
+                    <small class="text-left">~Itachi Uchiha</small>
+                  </blockquote>
 
-                  <form method="POST" action="/create_portfolio">
+                  <form method="POST" action="http://topdogfound.000webhostapp.com/createPortfolio" >
       
                     <div class=" p-5 mb-4 d-flex justify-content-center flex-row align-items-center">
                       <!--Avatar-->
@@ -30,7 +35,7 @@
                         <div class="d-flex justify-content-center">
                             <div class="btn btn-primary btn-rounded">
                                 <label class="form-label text-white m-1" for="customFile2">Upload Your Avatar</label>
-                                <input type="file" class="form-control d-none" id="customFile2" />
+                                <input type="file" class="form-control d-none" id="customFile2" name="image" />
                             </div>
                         </div>
                         </div>
@@ -42,7 +47,7 @@
   
                           <div class="form-outline">
                               <label class="form-label" for="firstName">First Name</label>
-                            <input type="text" id="firstName" class="form-control form-control-lg" name="first_name"/>
+                            <input type="text" id="firstName" class="form-control form-control-lg" name="first_name" placeholder="First name"/>
                           </div>
         
                         </div>
@@ -50,7 +55,7 @@
         
                           <div class="form-outline">
                               <label class="form-label" for="lastName">Last Name</label>
-                            <input type="text" id="lastName" class="form-control form-control-lg" name="last_name"/>
+                            <input type="text" id="lastName" class="form-control form-control-lg" name="last_name" placeholder="Last name"/>
                           </div>
         
                         </div>
@@ -95,7 +100,7 @@
         
                           <div class="form-outline">
                               <label class="form-label" for="emailAddress">Email</label>
-                            <input type="email" id="emailAddress" class="form-control form-control-lg" name="email"/>
+                            <input type="email" id="emailAddress" class="form-control form-control-lg" name="email" placeholder="Email"/>
                           </div>
         
                         </div>
@@ -103,7 +108,7 @@
         
                           <div class="form-outline">
                               <label class="form-label" for="phoneNumber">Phone Number</label>
-                            <input type="tel" id="phoneNumber" class="form-control form-control-lg" name="phone_number" />
+                            <input type="tel" id="phoneNumber" class="form-control form-control-lg" name="phone_number" placeholder="Phone Number" />
                           </div>
         
                         </div>
@@ -112,7 +117,7 @@
         
                           <div class="form-outline">
                               <label class="form-label" for="lastName">Blood Group</label>
-                            <input type="text" id="lastName" class="form-control form-control-lg" name="blood_group"/>
+                            <input type="text" id="lastName" class="form-control form-control-lg" name="blood_group" placeholder="Blood group"/>
                           </div>
         
                         </div>
@@ -122,7 +127,7 @@
         
                           <div class="form-outline">
                               <label class="form-label" for="lastName">Current Status</label>
-                            <input type="text" id="lastName" class="form-control form-control-lg" name="current_status"/>
+                            <input type="text" id="lastName" class="form-control form-control-lg" name="current_status" placeholder="Current status"/>
                           </div>
         
                         </div>
@@ -404,7 +409,7 @@
       
                             <div class="form-outline">
                                 <label class="form-label" for="lastName">City</label>
-                              <input type="text" id="permanent_city" class="form-control form-control-lg" name="permanent_city"/>
+                              <input type="text" id="permanent_city" class="form-control form-control-lg" name="permanent_city" placeholder="Permanent city"/>
                             </div>
           
                           </div>
@@ -413,7 +418,7 @@
         
                               <div class="form-outline">
                                   <label class="form-label" for="lastName">District</label>
-                                <input type="text" id="permanent_district" class="form-control form-control-lg" name="permanent_district"/>
+                                <input type="text" id="permanent_district" class="form-control form-control-lg" name="permanent_district" placeholder="Permanent district"/>
                               </div>
             
                           </div>
@@ -424,7 +429,7 @@
       
                             <div class="form-outline">
                                 <label class="form-label" for="lastName">Locality</label>
-                              <input type="text" id="permanent_locality" class="form-control form-control-lg" name="permanent_locality"/>
+                              <input type="text" id="permanent_locality" class="form-control form-control-lg" name="permanent_locality" placeholder="Permanent locality"/>
                             </div>
           
                           </div>
@@ -708,7 +713,7 @@
       
                             <div class="form-outline">
                                 <label class="form-label" for="lastName">City</label>
-                              <input type="text" id="current_city" class="form-control form-control-lg" name="current_city"/>
+                              <input type="text" id="current_city" class="form-control form-control-lg" name="current_city" placeholder="Current city"/>
                             </div>
           
                           </div>
@@ -717,7 +722,7 @@
         
                               <div class="form-outline">
                                   <label class="form-label" for="lastName">District</label>
-                                <input type="text" id="current_district" class="form-control form-control-lg" name="current_district"/>
+                                <input type="text" id="current_district" class="form-control form-control-lg" name="current_district" placeholder="Current district"/>
                               </div>
             
                           </div>
@@ -729,7 +734,7 @@
         
                               <div class="form-outline">
                                   <label class="form-label" for="lastName">Locality</label>
-                                <input type="text" id="current_locality" class="form-control form-control-lg" name="current_locality"/>
+                                <input type="text" id="current_locality" class="form-control form-control-lg" name="current_locality" placeholder="Current locality"/>
                               </div>
             
                           </div>
@@ -742,10 +747,10 @@
 <!--Current Address-->
 
 <!--Adding skills-->
-                      <label class="form-label mt-4" for="lastName">Add Skills</label>
+                      <label class="form-label mt-4" for="lastName">Skills</label>
                       <div class="shadow p-4">
                           <div class="form-outline">
-                            <input type="text" id="add_skills" class="form-control form-control-lg mb-4" name="add_skilss" autocomplete="off"/>
+                            <input type="text" id="add_skills" class="form-control form-control-lg mb-4" name="add_skilss" autocomplete="off" placeholder="Add skill"/>
                             <div class="btn btn-primary mb-4" id="add_skill_button">Add Skills</div>
                           </div>
 
@@ -758,6 +763,56 @@
                       </div>
 <!--Adding Skills Ends-->
 
+<!--Add Work Experience-->
+                      <label class="form-label mt-4" for="lastName">Work Experience</label>
+
+                      <div class=" shadow p-4 mb-2 " style="width: 100%; height: 50%; overflow-y:scroll ;"  id="work_exp_block">
+                        
+                            <div class=" shadow p-4 mb-3" style="background-color: rgba(47, 218, 24, 0.088)">
+                              <h2 class="mt-2">Work Heading</h2>
+                              <p>Work Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus porro itaque consequuntur ratione, magnam molestias culpa voluptatem non, eveniet rem eum totam vel ipsam delectus tempora repellat sint minima?</p>
+                            </div>
+
+                            <div class=" shadow p-4 mb-3" style="background-color: rgba(192, 24, 218, 0.088)">
+                              <h2 class="mt-2">Work Heading</h2>
+                              <p>Work Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus porro itaque consequuntur ratione, magnam molestias culpa voluptatem non, eveniet rem eum totam vel ipsam delectus tempora repellat sint minima?</p>
+                            </div>
+
+                            <div class=" shadow p-4 mb-3" style="background-color: rgba(53, 24, 218, 0.088)">
+                              <h2 class="mt-2">Work Heading</h2>
+                              <p>Work Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus porro itaque consequuntur ratione, magnam molestias culpa voluptatem non, eveniet rem eum totam vel ipsam delectus tempora repellat sint minima?</p>
+                            </div>
+
+                            <div class=" shadow p-4 mb-3" style="background-color: rgba(218, 163, 24, 0.088)">
+                              <h2 class="mt-2">Work Heading</h2>
+                              <p>Work Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus porro itaque consequuntur ratione, magnam molestias culpa voluptatem non, eveniet rem eum totam vel ipsam delectus tempora repellat sint minima?</p>
+                            </div>
+
+                            <div class=" shadow p-4 mb-3" style="background-color: rgba(218, 163, 24, 0.088)">
+                              <h2 class="mt-2">Work Heading</h2>
+                              <p>Work Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus porro itaque consequuntur ratione, magnam molestias culpa voluptatem non, eveniet rem eum totam vel ipsam delectus tempora repellat sint minima?</p>
+                            </div>
+
+                            <div class=" shadow p-4 mb-3" style="background-color: rgba(24, 189, 218, 0.088)">
+                              <h2 class="mt-2">Work Heading</h2>
+                              <p>Work Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus porro itaque consequuntur ratione, magnam molestias culpa voluptatem non, eveniet rem eum totam vel ipsam delectus tempora repellat sint minima?</p>
+                            </div>
+
+                            
+                            <div class=" shadow p-4 mb-3" style="background-color: rgba(218, 24, 24, 0.088)">
+                              <h2 class="mt-2">Work Heading</h2>
+                              <p>Work Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus porro itaque consequuntur ratione, magnam molestias culpa voluptatem non, eveniet rem eum totam vel ipsam delectus tempora repellat sint minima?</p>
+                            </div>
+                      </div>
+
+                      
+                      <!-- <div class=" shadow p-4" id="work_exp">
+                        <input type="text" class="form-control form-control-lg mb-4" autocomplete="off" placeholder="Add work Title"/>
+                        <textarea id="w3review"  class="form-control form-control-lg mb-4"  rows="4" cols="50" placeholder="Add work description"></textarea>
+                        <div class="btn btn-primary m-1" id="add_exp">Add Experience</div>
+                      </div> -->
+                      <!-- <div class="btn btn-primary m-4" id="add_work_exp">Work Experience</div> -->
+<!--Add Work Experience-->
                       <div class="mt-4 pt-2">
                         <input class="btn btn-primary btn-lg" type="submit" value="Choose Template"/>
                       </div>
